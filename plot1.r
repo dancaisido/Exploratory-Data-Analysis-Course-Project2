@@ -20,6 +20,10 @@ unzip(zip0)
 nei <- readRDS("summarySCC_PM25.rds")
 names(nei)
 
+
+#Divide by thousand, so there will be no so much numbers when we plot it.
+nei$Emissions <- nei$Emissions/1000
+
 #Source Classification Code
 #It provides the mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source
 scc <- readRDS("Source_Classification_Code.rds")
@@ -30,9 +34,6 @@ names(scc)
 #   Using the base plotting system, make a plot showing the total PM2.5 emission from all sources 
 #   for each of the years 1999, 2002, 2005, and 2008.
 ####################################################################################################
-
-#Divide by thousand, so there will be no so much numbers when we plot it.
-nei$Emissions <- nei$Emissions/1000
 
 #Get the total PM2.5 emissions from years 1999, 2002,2005, and 2008
 plot1<-aggregate(Emissions~year,nei,sum)
