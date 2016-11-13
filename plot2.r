@@ -20,6 +20,9 @@ unzip(zip0)
 nei <- readRDS("summarySCC_PM25.rds")
 names(nei)
 
+#Divide by thousand, so there will be no so much numbers when we plot it.
+nei$Emissions <- nei$Emissions/1000
+
 #Source Classification Code
 #It provides the mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source
 scc <- readRDS("Source_Classification_Code.rds")
@@ -30,10 +33,8 @@ names(scc)
 #   Use the base plotting system to make a plot answering this question.
 ###################################################################################################################
 
-
 #Get the observations for BALTIMORE CITY only(equivalent FIPS=24510)
 Bal<-subset(nei,fips=="24510")
-
 
 #Get the total PM2.5 emissions per year
 plot2<-aggregate(Emissions~year,Bal,sum)
