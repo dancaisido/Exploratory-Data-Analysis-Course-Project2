@@ -1,8 +1,12 @@
-# Exploratory-Data-Analysis-Course-Project2
-Peer Graded Assignment (PROJECT 2) to fulfill the requirements in Coursera: Exploratory Data Analysis
+# Exploratory Data Analysis: Course Project 2
+This the 2nd Peer Graded Assignement under COURSERA: Exploratory Data Analysis course
 
+It includes 6 R scripts, and 6 .PNG files to answer the 6 questions in the assignment.
+Each R script corresponds in creating the plots/graphs saved as PNG file, i.e.
 
-## INSTRUCTIONS
-Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (NEI). You can read more information about the NEI at the EPA National Emissions Inventory web site.
-
-For each year and for each type of PM source, the NEI records how many tons of PM2.5 were emitted from that source over the course of the entire year. The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+1. plot1.R -> plot1.png
+2. plot2.R -> plot2.png
+3. plot3.R -> plot3.png
+4. plot4.R -> plot4.png
+5. plot5.R -> plot5.png
+6. plot6.R -> plot6.png
